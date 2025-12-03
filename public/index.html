@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Autobooking Manager</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="top">
+        <h1>Autobooking Manager</h1>
+        <div class="actions">
+          <button id="saveConfig" class="btn btn-primary">Save config</button>
+          <button id="testSearch" class="btn">Test search</button>
+          <button id="testBooking" class="btn">Test booking</button>
+          <button id="clearLogs" class="btn btn-ghost">Clear logs</button>
+        </div>
+      </header>
+
+      <div class="grid">
+        <div class="col-left">
+          <section class="card">
+            <h2>Credentials & IDs</h2>
+            <label>Bearer token<br><textarea id="token" rows="4"></textarea></label>
+            <div class="two-up">
+              <label>Organisation ID<br><input id="organisationId"/></label>
+              <label>Federation ID<br><input id="federationId"/></label>
+            </div>
+            <div class="two-up">
+              <label>Location ID<br><input id="locationId"/></label>
+              <label>Reservation Type ID<br><input id="reservationTypeId" value="85"/></label>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Booking Parameters</h2>
+            <div id="statusBar">Status: <strong id="runningState">stopped</strong></div>
+            <div id="configSummary" class="muted"></div>
+            <label>Date (YYYY-MM-DD)<br><input id="date" type="date"/></label>
+            <div class="section-title">Duration — Preferred time to play</div>
+            <div class="durations">
+              <label class="dur-item"><input type="checkbox" class="dur" value="60"> <span>60</span></label>
+              <label class="dur-item"><input type="checkbox" class="dur" value="90" checked> <span>90</span></label>
+              <label class="dur-item"><input type="checkbox" class="dur" value="120"> <span>120</span></label>
+              <label class="dur-item"><input type="checkbox" id="allDur"> <span>All</span></label>
+            </div>
+            <div class="two-up">
+              <label><input id="windowStart" placeholder="Window start (HH:mm)" value="18:30"/></label>
+              <label><input id="windowEnd" placeholder="Window end (HH:mm)" value="22:00"/></label>
+            </div>
+            <label>Interval (seconds) between runs (0 = single run)<br><input id="intervalSeconds" value="0"/></label>
+            <div class="buttons">
+              <button id="start" class="btn btn-success">Start</button>
+              <button id="stop" class="btn">Stop</button>
+              <button id="autoBookAll" class="btn" title="Auto book all available slots from last Test search">Auto-book</button>
+            </div>
+
+            <div class="quick card-muted">
+              <label>Quick Test Booking inputs (optional):</label>
+              <label>Inventory Item ID (optional)<br><input id="testInventoryId" value="737" placeholder="e.g. 737"/></label>
+              <div class="two-up">
+                <label>Start DateTime<br><input id="testStart" type="datetime-local"/></label>
+                <label>End DateTime<br><input id="testEnd" type="datetime-local"/></label>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="col-right">
+          <section class="card">
+            <h2>Available Slots</h2>
+            <div id="slots" class="slots-area">(run Test search to see slots)</div>
+          </section>
+
+          <section class="card">
+            <h2>Booking Link / Action</h2>
+            <div class="booking-controls">
+              <label><input type="checkbox" id="autoOpen"> Auto-open booking after create</label>
+            </div>
+            <div id="bookingArea">(no booking yet)</div>
+          </section>
+
+          <section class="card">
+            <h2>Status & Logs</h2>
+            <pre id="logs"></pre>
+          </section>
+
+          <section class="card">
+            <h2>Last Booking Result</h2>
+            <pre id="lastResult">(no result yet)</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

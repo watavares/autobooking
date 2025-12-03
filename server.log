@@ -1,0 +1,27 @@
+Loaded saved config from /Users/andretavares/Documents/watavares/Projects/Apps/autobooking/config.json
+Autobooking server listening on http://localhost:3000
+proxy-booking attempt 1 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 1 failed: timeout of 60000ms exceeded
+proxy-booking attempt 2 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 2 failed: timeout of 60000ms exceeded
+proxy-booking attempt 3 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 3 failed: timeout of 60000ms exceeded
+proxy-booking attempt 1 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 1 failed: timeout of 60000ms exceeded
+proxy-booking attempt 2 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 2 failed: timeout of 60000ms exceeded
+proxy-booking attempt 3 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 3 failed: timeout of 60000ms exceeded
+proxy-booking attempt 1 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 1 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 1 failed: timeout of 60000ms exceeded
+proxy-booking attempt 2 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 1 failed: timeout of 60000ms exceeded
+proxy-booking attempt 2 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 2 failed: timeout of 60000ms exceeded
+proxy-booking attempt 3 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 2 failed: timeout of 60000ms exceeded
+proxy-booking attempt 3 -> POST https://api.foys.io/court-booking/members/api/v1/bookings
+proxy-booking attempt 3 failed: timeout of 60000ms exceeded
+proxy-booking attempt 3 failed: timeout of 60000ms exceeded
+proxy-booking attempt 1 -> POST https://api.foys.io/court-booking/members/api/v1/bookings

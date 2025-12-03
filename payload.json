@@ -1,0 +1,6 @@
+{
+  "reservationTypeId": 85,
+  "startDateTime": "2025-12-03T10:00:00.000Z",
+  "endDateTime": "2025-12-03T11:00:00.000Z",
+  "reservations": [{ "inventoryItemId": 737 }]
+}
